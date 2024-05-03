@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viemport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Places To Travel!</title>
+</head>
+<style>
+
+    body {
+        background-image: url(https://www.emesa-m30.es/wp-content/uploads/2021/11/que-es-una-carretera-convencional.jpg);
+        text-align: center
+    }
+
+    h1 {
+        font-style: normal;
+        color: rgb(0, 0, 0);
+    }
+
+    h2 {
+        color: rgb(0, 0, 0);
+        text-decoration: underline;
+    }
+
+    .favorite {
+        background-color: #ff6600;
+    }
+
+.text {
+    background-color: #00ffb3;
+    }
+    .body {
+        background-image: url(https://www.emesa-m30.es/wp-content/uploads/2021/11/que-es-una-carretera-convencional.jpg);
+        background-position-x: center;
+    }
+
+    .city {
+        height: 500px;
+        width: 700px;
+    }
+</style>
+<progress value="10" max="30"></progress>
+<h6>1 of 3 citys visited</h6>
+<body>
+    
+
+
+    <h1>
+        <div>Best Places To Travel!</div>
+    </h1>
+
+
+    <h2 class="favorite"><u>1-The Maldivas</u></h2>
+
+    <i class="text">The Maldivas is a very beautifool place to travel because it has a lot of small islands</i>
+
+    <h5 class="text"><a href="https://www.viajeselcorteingles.es/especiales/viajes-a-maldivas/">where to buck</a href></a></h5>
+    <img id="myImage" height="300px"
+        src="https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2019/06/20/15610451553894.jpg">
+
+    <button id="mybutton" onclick="changeImage()">change img.</button>
+
+
+
+    <h2 class="favorite"><u>2-Japan</u></h2>
+
+    <i class="text">I think that Japan is a very interesting place to visit because it is very advanced</i>
+
+    <h5 class="text"><a href="https://www.viajeselcorteingles.es/especiales/viajes-a-maldivas/">where to buck</a href></a>
+    </h5>
+
+    <img class="city" id="change img"
+        src="https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/travel/japan-travel/giappone_m.jpg.image.694.390.low.jpg">
+
+
+    <button id="button" onclick="otherImage()">change img.</button>
+
+
+
+    <h2 class="favorite"><u>3-valencia</u></h2>
+
+    <i class="text"> Valencia is a great idea
+        to spend a few days because is very beautifool, and it's my city so in my opinion if you
+        are travelling you should visit Valencia
+        </i>
+
+<h3 class="text">press the img to visit website</h3>
+        
+<a href="https://www.visitvalencia.com/">
+        <img id="anotherimg" height="400px"
+            src="https://www.civitatis.com/blog/wp-content/uploads/2023/07/torres-serranos-valencia.jpg"></a>
+        
+            <button id="anotherimg" onclick="anotherimg()">change img.</button>
+
+            <button id="scrollup" onclick="scrollup()">scrollup</button>
+
+
+</body>
+<script>
+    const myImage = document.getElementById("myImage");
+    const myImage2 = document.getElementById("change img");
+    const myImage3 = document.getElementById("anotherimg");
+    function scrollup() { document.documentElement.scrollTop = 1;("scrollup"); }
+
+
+    const mybutton = document.getElementById("mBbutton");
+
+    function changeImage() {
+        const mySrc = myImage.getAttribute("src")
+        if (mySrc === "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2019/06/20/15610451553894.jpg") {
+            myImage.setAttribute("src", "https://www.maldivas.net/f/maldivas/maldivas/guia/precios.jpg")
+        }
+        else {
+            myImage.setAttribute("src", "https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2019/06/20/15610451553894.jpg")
+        }
+    }
+
+    function otherImage() {
+        const src = myImage2.getAttribute("src")
+        console.log("here")
+        if (src === "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/travel/japan-travel/giappone_m.jpg.image.694.390.low.jpg") {
+            myImage2.setAttribute("src", "https://images.ecestaticos.com/dSJPeU7WAdhZiuM4SHQjjOQDm5U=/0x0:1254x836/1200x900/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fea3%2F521%2F233%2Fea3521233b2875f500ae9c830e63e7cd.jpg")
+        }
+        else {
+            myImage2.setAttribute("src", "https://www.costacruceros.es/content/dam/costa/costa-magazine/articles-magazine/travel/japan-travel/giappone_m.jpg.image.694.390.low.jpg")
+        }
+    }
+
+
+    function anotherimg() {
+        const src1 = myImage3.getAttribute("src")
+        if (src1 === "https://www.civitatis.com/blog/wp-content/uploads/2023/07/torres-serranos-valencia.jpg") {
+            myImage3.setAttribute("src", "https://media.traveler.es/photos/64ccab5881fcfac4992f9db4/16:9/w_2560%2Cc_limit/C8J2KG.jpg")
+        }
+        else {
+            myImage3.setAttribute("src", "https://www.civitatis.com/blog/wp-content/uploads/2023/07/torres-serranos-valencia.jpg")
+        }
+    }
+</script>
+
+</html>

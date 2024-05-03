@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Madrid</title>
+  <style>
+    img {
+      height: 500px
+    }
+
+    #general {
+      display: grid;
+      grid-template-columns: 300px 300px;
+      justify-content: space-evenly;
+      justify-items: center;
+      align-content: space-evenly;
+      align-items: center;
+    }
+
+    html {
+      cursor: url(https://javierferrersb.github.io/cursors/sword.png ), auto;
+    }
+  </style>
+</head>
+
+<body style="background-color:rgb(8, 230, 238); text-align: center">
+  <progress max="100" value="50"></progress>
+  <h1>Madrid</h1>
+
+  <div id="general">
+    <div id="one">
+      <h2>Comida</h2>
+      <p>La comida Tortila de patata sin cebolla es una muy buena comida !Os lo recomiendo¡</p>
+    </div>
+    <div id="two">
+      <h2>Películas famosas de Madrid </h2>
+      <p>Cuando fuí al cine, vi una película llamada Señor, dame paciencia. Vale la pena gastar 4 euros.</p>
+    </div>
+  </div>
+
+
+
+  <h2>Edificios famosos de Madrid </h2>
+  <p>Palacio Real,Palacio de Cebeles,Edificio Metrópolis...!Maravillosos¡</p>
+  <img src="https://wallpapers.com/images/hd/madrid-spain-gran-via-dr8onra901gkzule.jpg" />
+  <img src="https://s1.eestatic.com/2023/10/10/madrid/sociedad/800930461_236711185_1706x1280.jpg" alt="" height="500px">
+  <button onclick="madridFunction()">Botón </button>
+</body>
+
+<script>
+  function madridFunction() {
+    document.documentElement.scrollTop = 0;
+  }
+</script>
+
+</html>

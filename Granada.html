@@ -1,0 +1,143 @@
+<!--Replace text with information you want to put on your website-->
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>GRANADA</title>
+    
+    <style>
+      h1 {font-style:italic; color:rgb(145, 7, 57)}
+      .Visit {background-color: cadetblue;}
+      .Food {background-color: darkolivegreen;}
+      .Place {background-color: pink;}
+      .Events {background-color: grey;}
+      .Travel {background-color: darkgoldenrod;}
+      
+      body{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+      .Visit > img {border:10px solid cornflowerblue;}
+      .Food > img {border:10px solid olive;}
+      .Place > img {border:10px solid palevioletred;}
+      .Events > img {border:10px solid dimgrey;}
+      .Travel > img {border:10px solid darkorange ;}
+    </style>
+  
+</head>
+  <!--Change white to the name of the color that you want your background to be and center to either start, center, or end depending on where you want your text to be aligned-->
+
+  <body {background-color: white;}>
+    <A href="#Visit">What can I visit?</A>
+    <A href="#Food">Food & drink</A>
+    <A href="#Place">Place to stay</A>
+    <A href="#Events">Events</A>
+    <A href="#Travel">Travel info</A>
+    <h1 style="text-align: center;">GRANADA</h1>
+
+   <div class="Visit"id="visit"><A name="Visit"></A><h2>What can I visit?</h2>
+    <p>Granada is a beautiful city where there are a lot of things to see. 
+      For me the most awesome monument is the alhambra of Granada with its Arabic decorations and its fountains.
+      Another fantastic place is the Sacromonte is an ancient monastery where there are caves with passages that form a Via Crucis under the church</p>
+    <img id="What can I visit?" height="400px" src="https://c1.staticflickr.com/5/4195/35214749061_4430cba3dc_b.jpg"></div>
+    <button id="vara" onclick="changeImageGandalf()">Change image to see the places</button>
+
+    
+    <div id="Food" class="Food"><A name="Food"></A><h2>Food and drink</h2>
+    <p>The operating system of Granada bars is very peculiar. When you order a beer they automatically give you a tapa. 
+    A tipically desert of Granada is the Pionono. Is a cake usually served rolled in a cylindrical sponge cake.</p>
+    <img id="pionono" height="400px" src="https://hips.hearstapps.com/hmg-prod/images/mejores-bares-tapas-copas-madrid-malasan-a-lavapies-latina-esquire-1542307275.jpg?crop=1.00xw:0.756xh;0,0.193xh&resize=1200:*"></div> 
+    <button id="elendil" onclick="changeImageAragorn()">Change image to see the Pionono</button>
+
+
+   <div class="Place"id="Place"><A name="Place"></A><h2>Place to stay</h2>
+    <p>A lot of people think that the Parador of Granada is the most beautiful hotel in Granada. It is located inside of the Alhambra gardens.</p>
+    <img id="myImage" height="400px" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/57/e9/07/caption.jpg?w=700&h=-1&s=1"></div>
+    <button id="myButton" onclick="changeImage()">Change image</button>
+
+
+    <div class="Events"id="Events"><A name="Events"></A><h2>Events</h2>
+    <p>The May crosses are from May 3rd to May 5th.The main reason for the festival is to pay tribute to nature because May is the month of the beginning of the harvest season.</p>
+    <img id="gimli" height="400px" src="https://www.granadahoy.com/2024/03/15/granada/Imagen-archivo-instalada-Plaza-Carmen_1884722028_206462856_667x375.jpg"></div>
+    <button id="acha" onclick="changeImageGimli()">Change image</button>
+
+
+    <div class="Travel" id="Travel" ><A name="Travel"></A><h2>Travel info</h2>
+    <p>Información de contacto de la oficina municipal de información turística:</p> 
+    <p style="text-align: center;">Ayuntamiento </p> 
+    <p style="text-align: center;">Plaza del Carmen s/n</p>
+    <p style="text-align: center;">18071 Granada</p>
+    <p style="text-align: center;">(+34) 958 248 280</p>
+    <p style="text-align: center;"> <a  href="https://turismo.granada.org/es">turismo@granada.org</a></p>
+    <img id="granada" height="400px" src="https://turismo.granada.org/sites/default/files/styles/master_wide_1920max/public/2023-09/Terraza_vistas_panoramicas_en_granada.jpg.webp?itok=inOQR1ZS"></div>
+    <button id="espada" onclick="changeImageBoromir()">Change image to see new picture</button>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50860.94557462023!2d-3.6324712540440123!3d37.18100750304782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce62d32c27d%3A0x9258f79dd3600d72!2sGranada!5e0!3m2!1sen!2ses!4v1714755108732!5m2!1sen!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+  </body>
+  <script>
+    
+    
+
+    function changeImageGandalf(){ 
+      
+      const myImage = document.getElementById("What can I visit?");
+      const myButton = document.getElementById("vara");
+      
+      const mySrc = myImage.getAttribute("src")
+      if (mySrc === "https://c1.staticflickr.com/5/4195/35214749061_4430cba3dc_b.jpg"){
+        myImage.setAttribute("src","https://fascinatingspain.com/wp-content/uploads/imagen_granada_abadia-del-sacromonte_Santas-cuevas_Foto-abadiasacromonte.jpg")}
+      else {
+        myImage.setAttribute("src","https://c1.staticflickr.com/5/4195/35214749061_4430cba3dc_b.jpg")}
+    } 
+    function changeImageAragorn(){ 
+      
+      const myImage = document.getElementById("pionono");
+      const myButton = document.getElementById("elendil");
+      
+      const mySrc = myImage.getAttribute("src")
+      if (mySrc === "https://hips.hearstapps.com/hmg-prod/images/mejores-bares-tapas-copas-madrid-malasan-a-lavapies-latina-esquire-1542307275.jpg?crop=1.00xw:0.756xh;0,0.193xh&resize=1200:*"){
+        myImage.setAttribute("src","https://pionono.com/wp-content/uploads/2016/11/el_pionono.jpg")
+      }
+      else {
+        myImage.setAttribute("src","https://hips.hearstapps.com/hmg-prod/images/mejores-bares-tapas-copas-madrid-malasan-a-lavapies-latina-esquire-1542307275.jpg?crop=1.00xw:0.756xh;0,0.193xh&resize=1200:*")
+      }
+    } 
+
+    function changeImage() {
+     
+      const myImage = document.getElementById("myImage");
+      const myButton = document.getElementById("myButton");
+      
+      const mySrc = myImage.getAttribute("src")
+      if (mySrc === "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/57/e9/07/caption.jpg?w=700&h=-1&s=1"){myImage.setAttribute("src","https://photos.hotelbeds.com/giata/bigger/00/003101/003101a_hb_ro_022.jpg")
+      }
+      else {
+        myImage.setAttribute("src","https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2b/57/e9/07/caption.jpg?w=700&h=-1&s=1")
+      }
+    }
+
+    function changeImageGimli(){ 
+      
+      const myImage = document.getElementById("gimli");
+      const myButton = document.getElementById("acha");
+      
+      const mySrc = myImage.getAttribute("src")
+      if (mySrc === "https://www.granadahoy.com/2024/03/15/granada/Imagen-archivo-instalada-Plaza-Carmen_1884722028_206462856_667x375.jpg"){myImage.setAttribute("src","https://blog.playasenator.com/wp-content/uploads/2018/04/el-ojo-revelador.jpg")
+      }
+      else {
+        myImage.setAttribute("src","https://www.granadahoy.com/2024/03/15/granada/Imagen-archivo-instalada-Plaza-Carmen_1884722028_206462856_667x375.jpg")
+      }
+    } 
+    
+    function changeImageBoromir(){ 
+      
+      const myImage = document.getElementById("granada");
+      const myButton = document.getElementById("espada");
+      
+      const mySrc = myImage.getAttribute("src")
+      if (mySrc === "https://turismo.granada.org/sites/default/files/styles/master_wide_1920max/public/2023-09/Terraza_vistas_panoramicas_en_granada.jpg.webp?itok=inOQR1ZS"){myImage.setAttribute("src","https://turismo.granada.org/sites/default/files/styles/master_wide_1920max/public/2023-10/alhambra_de_granada_3.jpg.webp?itok=RNKekEPI")
+      }
+      else {
+        myImage.setAttribute("src","https://turismo.granada.org/sites/default/files/styles/master_wide_1920max/public/2023-09/Terraza_vistas_panoramicas_en_granada.jpg.webp?itok=inOQR1ZS")
+      }
+    } 
+    </script>
+</html>

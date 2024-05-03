@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> My website </title>
+    <style>
+
+        body {
+            background-color: rgb(77, 6, 6); 
+            padding:0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: bisque;
+        }
+
+        .section {
+            width: 90%;
+            margin-inline: auto;
+            margin-bottom: 50px;
+            display:grid;
+            grid-template-columns: 7fr 3fr;
+            gap: 80px;
+            background-color: bisque;
+        }
+
+        .section > :last-child {
+            align-self: center;
+        }
+
+        .section img {
+            max-width: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .titulo {
+            color:black;
+            text-align: center;
+            font-size: 100px;
+            margin-top: 50px;
+            margin-bottom: 80px;
+        }
+
+        .cabecera {
+             color: black;
+             padding-top: 2%;
+             font-size: x-large;
+        }
+
+        .text {
+            color: rgb(29, 29, 29);
+            font-size: 1.25rem;
+        }
+
+        .link {
+            display: inline-block;
+            background-color: brown;
+            padding: .5rem 1rem;
+            border-radius: 4px;
+            box-shadow: 5px 5px 10px grey;
+            color: bisque;
+            text-decoration: none;
+        }
+        .link:hover {
+            background-color: rgb(231, 97, 97);
+            box-shadow: 2px 2px 5px grey;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main class="container" id="container">
+        <h1 class="titulo">
+            <i>Skateboard List</i>
+        </h1>
+        <section class="section">
+            <div>
+                <h2 class="cabecera">Normal Skateboard</h2>
+                <p class="text">They are also called street skateboards, and tend to be 28-32 inches. They're good for doing tricks and are the standard size for most skate parks.</p>
+                <p class="text">Normal skates only have two groups of two wheels, which usually are 1.96 to 2.04 inchest big and have a hardness of 99a. They are then placed in a truck 7.25 to 7.75 inches long and 1.97 to 2.03 inches tall. <i>Learn more about sizes in the link below.</i></p>
+                <p class="text">The normal skate is the only model allowed in the Skateboarding olympics. Out of the 85 million skaters world wide the majority use street skateboards.</p>
+                <a class="link" href="https://size-charts.com/topics/skateboard-size-chart/skateboard-wheel-size/#:~:text=The%20most%20common%20Wheel%20size%20for%20skateboards%20is,1A%20is%20softest%20and%20100A%20is%20the%20hardest.">Link</a>
+            </div>
+            <div>
+                <img id="myImage0" src="https://static.designboom.com/wp-content/dbsub/442912/2020-10-12/100-recycled-plastic-open-source-skateboard-decks-2-5f8487215aafe.jpg" alt="">
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2 class="cabecera">Flowboards</h2>
+                <p class="text"> Flowboard is a variation on a skateboard, combining aspects of surfing, skating and snowboarding. The flowboard's design enables a 45 degree turning ability rather than the standard 25 degrees on a skateboard while still remaining stable.</p>
+                <p class="text"> A flowboard has 14 wheels, divided into two groups of seven. They are designed this way so that they can put pressure on just 2 wheels of the board, rather than 4. This more focused weight distribution requires slightly more effort into keeping the board moving. </p>
+                <p class="text"> The flowboard was created by Pieter Schouten and Mike Simonian, two design students attending the Art Center College of Design in Vevey, Switzerland. In 1993, they had the idea to develop a board that would perform like a snowboard, but on asphalt. They found that on a skateboard, a rider could only lean over a few degrees and then the bushings would give resistance in a turn. The two inventors sought a solution that would give a rider the ability to execute more extreme angles while carving without resistance, offering fluid transitions edge to edge.<i> Learn more about Flowboards in the link below.</i></p>
+                <a class="link" href="https://en.wikipedia.org/wiki/Flowboard">Link</a>
+            </div>
+            <div>
+                <img id="myImage1" src="https://th.bing.com/th/id/R.9209a3819626de46beaefe8698f12233?rik=NNrQ0B7wubnRfQ&riu=http%3a%2f%2fimage.made-in-china.com%2f2f0j00KvFEUyrPfOcL%2fFlowboard-14-Wheels-Skateboard-XLT-FL05-.jpg&ehk=p%2bmsR6PYMCQNZTtctUz2qCysM97Gtr7Q%2big0IAOtfMw%3d&risl=&pid=ImgRaw&r=0" alt="">
+            </div>
+        </section>
+        <section class="section">
+            <div>
+                <h2 class="cabecera">Penny Boards</h2>
+                <p class="text"> Penny boards are distinguished by a plastic deck, and its smaller size, since they are only 27 inches long in average. They are designed for cruising to places, and not to make tricks.</p>
+                <p class="text"> The only way to customize a penny board is by selecting the plastic color, since this type of skate doesn't have a a plain deck to make designs on. </p>
+                <p class="text"> Ben Mackay created the Penny board in 2010, from which the brand Penny Skateboards was born. The idea behind the creation of the company was inspired by Mackay's first-ever skateboard, a small plastic cruiser his father bought for him at a garage sale.<i> Learn more about penny boards in the link below.</i></p>
+                <a class="link" href="https://en.wikipedia.org/wiki/Penny_board">Link</a>
+            </div>
+            <div>
+                <img id="myImage2" src="https://i0.wp.com/www.jackmanworks.com/wp-content/uploads/DSC05441.jpg?fit=1500%2C1125&ssl=1" alt="">
+            </div>
+        </section>
+
+        <section class="section">
+            <div>
+                <h2 class="cabecera">Longboards</h2>
+                <p class="text">A longboard is a type of skateboard typified by longer decks and wheelbases, larger-diameter and softer wheels, and often lower riding height compared to street skateboards.</p>
+                <p class="text">It is one of the earliest types of skateboards. Longboards were inspired by surfing, with early longboards drawing from the design of surfboards, resembling and mimicking the motion of riding a surfboard, but adapted to riding on streets in a practice known as sidewalk surfing.</p>
+                <p class="text">Available in a wide variety of shapes, longboards are typically designed and optimized for cruising and raicing, also refered as "downhill" within the longboarding community. Longboarding also include more specialized tricks and forms, such as longboard dancing.<i> Learn more about longboards in the link below.</i></p>
+                <a class="link" href="https://en.wikipedia.org/wiki/Longboard_(skateboard)">Link</a>
+            </div>
+            <div>
+                <img id="myImage3" src="https://i.pinimg.com/originals/db/ac/38/dbac38eaf1821735832e8da9a7b000ea.jpg" alt="">
+            </div>
+        </section>
+    </main>
+</body>
+<script>
+    const fotos = [
+        [
+        "https://th.bing.com/th/id/R.5dc8228d7c1781548e9924db93cc43c6?rik=B6F5FU7EfmVKLg&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f2%2f25%2fSkateboard_on_side.JPG&ehk=%2f4aq4pMRxF3fKsnva%2bITXEnHJoyASDDray0CHIPqZ%2fk%3d&risl=&pid=ImgRaw&r=0",
+        "https://static.designboom.com/wp-content/dbsub/442912/2020-10-12/100-recycled-plastic-open-source-skateboard-decks-2-5f8487215aafe.jpg",
+        ],
+        [
+        "https://th.bing.com/th/id/R.eaeaee9ca5cb9c52b186522467b68a4a?rik=mwKl2lNL2pXL3w&riu=http%3a%2f%2fzedomax.com%2fblog%2fwp-content%2fuploads%2f2007%2f04%2fflowboard-1.gif&ehk=ZllaSg3Ac7tWTZZAGT4lorjuBJRLD5kgKJCUNfGFfTU%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1",
+        "https://th.bing.com/th/id/R.9209a3819626de46beaefe8698f12233?rik=NNrQ0B7wubnRfQ&riu=http%3a%2f%2fimage.made-in-china.com%2f2f0j00KvFEUyrPfOcL%2fFlowboard-14-Wheels-Skateboard-XLT-FL05-.jpg&ehk=p%2bmsR6PYMCQNZTtctUz2qCysM97Gtr7Q%2big0IAOtfMw%3d&risl=&pid=ImgRaw&r=0",
+        ],
+        [
+        "https://i0.wp.com/www.jackmanworks.com/wp-content/uploads/DSC05441.jpg?fit=1500%2C1125&ssl=1",
+        "https://proscootersmart.com/wp-content/uploads/2018/11/best-penny-boards-2.jpeg",
+        ],
+        [
+        "https://i.pinimg.com/originals/db/ac/38/dbac38eaf1821735832e8da9a7b000ea.jpg",
+        "https://th.bing.com/th/id/R.35c3a4f60d81a6854b845850cf949cc6?rik=j85S6uO5gWDk%2bw&riu=http%3a%2f%2fd2rormqr1qwzpz.cloudfront.net%2fphotos%2f2014%2f12%2f01%2f71302-img_8620.jpg&ehk=WMm3vnWspaqKN2Qww6ccnZTCC9hI%2bBKlf3O2bEeciI4%3d&risl=&pid=ImgRaw&r=0",
+        ],
+    ];
+    document.getElementById('container').addEventListener("click", event => {
+        const myImage = event.target
+        const numimagen = myImage.id.slice(7)
+        if (myImage.id.slice(0,7) == "myImage") {
+            const mySrc = myImage.getAttribute("src")
+            if (mySrc === fotos[numimagen][0]){
+                myImage.setAttribute("src",fotos[numimagen][1])
+            }
+            else {
+                myImage.setAttribute("src",fotos[numimagen][0])
+            }
+        }
+    }
+    )
+</script>
+</html>
